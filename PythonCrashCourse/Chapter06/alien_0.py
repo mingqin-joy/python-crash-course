@@ -45,3 +45,25 @@ for alien in aliens[:5]:
 
 print("...")
 print("Total number of aliens: " + str(len(aliens)))
+
+# 2019/4/22星期一
+aliens = []
+for alien_number in range(0, 30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[0: 3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+
+print(aliens)
+
+for alien_new in aliens[0: 7]:
+    print(alien_new)
+print("...")
