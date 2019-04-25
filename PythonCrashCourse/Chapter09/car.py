@@ -14,6 +14,12 @@ class Car():
         else:
             print("You can't roll back an odometer!")
 
+    def update_odometer(self, mileage, hh):
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+
     def get_descriptive_name(self):
         long_name = str(self.year) + ' ' + self.make + ' ' + self.model
         return long_name.title()
