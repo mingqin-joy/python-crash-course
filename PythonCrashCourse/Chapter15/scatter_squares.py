@@ -11,5 +11,5 @@ plt.xlabel("value", fontsize=14)
 plt.ylabel("Square of value", fontsize=14)
 # 设置每个坐标轴的取值范围s
 plt.axes([0, 1100, 0, 1100000])
-# plt.show()
-plt.savefig('C:/Users/MingqinZhou/Desktop/squares_plot.png')
+plt.show()
+# plt.savefig('C:/Users/MingqinZhou/Desktop/squares_plot.png')
